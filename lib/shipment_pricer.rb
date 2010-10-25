@@ -2,9 +2,11 @@ require "shipment_pricer/zone"
 require "shipment_pricer/country"
 
 module ShipmentPricer
+  MARGIN = 0.2
+  
   
   def self.compute code, weight
-    Country.find_by_code( code )
+    Zone.find_zone_by_country_code( code ).price(weight)
   end
   
 end
