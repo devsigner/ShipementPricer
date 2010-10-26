@@ -17,8 +17,17 @@ module ShipmentPricer
       @taxes.find{|taxe| taxe[0] >= (weight + MARGIN)}.last
     end
     
+    
     class << self
-
+      
+      def find_by_name name
+        @@zones.find {|zone| zone.name == name }
+      end
+      
+      def count
+        @@zones.length
+      end
+      
       def find_country_by_code code
         @@zones.each do |zone|
           country = zone.find_country_by_code( code )

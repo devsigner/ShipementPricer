@@ -1,0 +1,27 @@
+zones:
+  - 
+    name: "F"
+    countries:
+      -
+        name: "France"
+        code: "FR"
+  - 
+    name: "OM"
+    countries:
+      -
+        name: "Mayot"
+        code: "MO"
+      -
+        name: "Martinique"
+        code: "MA"
+  - 
+    name: "OM2"
+    countries:
+      -
+        name: "Nouvelle Caledonie"
+        code: "NC"
+      -
+        name: "Tahiti"
+        code: "TI"
+    
+      

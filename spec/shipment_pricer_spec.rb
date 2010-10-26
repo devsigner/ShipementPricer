@@ -2,9 +2,15 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 module ShipmentPricer
   describe "api draft" do
-    it "does something" do
-      ShipmentPricer.compute( "fr", 1.25 ).should == ( 10.05 )
+    
+    [[1.25, 10.05],[1.0, 10.05]].each do |pair|
+      
+      it "should compute Shipment Price for FR and #{pair.first}g" do
+        ShipmentPricer.compute( "fr", pair.first ).should == ( pair.last )
+      end
+      
     end
+    
   end
 end
 

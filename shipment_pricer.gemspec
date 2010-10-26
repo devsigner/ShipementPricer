@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
   s.name        = "shipment_pricer"
   s.version     = ShipmentPricer::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = []
-  s.email       = []
+  s.authors     = ["Cédric Darricau"]
+  s.email       = ["info@avantagegraphique.com"]
   s.homepage    = "http://rubygems.org/gems/shipment_pricer"
   s.summary     = "TODO: Write a gem summary"
   s.description = "TODO: Write a gem description"
